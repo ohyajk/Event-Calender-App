@@ -66,7 +66,7 @@ console.log(full)
     }
   }
   return (
-    <div className='flex justify-center gap-4 h-screen items-center '>
+    <div className='flex flex-col justify-center gap-4 h-screen items-center '>
       <div>
       <h1 className='text-3xl logo'>Event Calendar App</h1>
     <div className='flex justify-start items-center py-4'>
