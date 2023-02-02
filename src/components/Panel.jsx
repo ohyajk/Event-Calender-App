@@ -1,13 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-
 const Panel = () => {
-
-  const getFullDate = useSelector((state) => state.selected)
-  console.log(getFullDate)
+    const date = useSelector((state) => state.yearSlice)
   return (
-    <div className='bg-blue-900 h-[80vh] w-[400px]'>
-        Your Selected Date :- {getFullDate}
+    <div className='w-[25%] '>
+      <h2 className='flex justify-center text-center py-4 text-xl'>
+      {date.dayInEng}  {date.day}-{date.month}-{date.year}
+      </h2>
     </div>
   )
 }
